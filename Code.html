@@ -1,0 +1,66 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+    
+        Tracker using HTML CSS & JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="app">
+        
+        <h1>Health Tracker App</h1>
+        <div class="inputs">
+            <div>
+                <label for="water">
+                      Water Intake (in ml)
+                  </label>
+                <input id="water" type="number">
+            </div>
+            <div>
+                <label for="exercise">
+                      Exercise Duration (in min)
+                  </label>
+                <input id="exercise" type="number">
+            </div>
+            <div>
+                <label for="bloodsugerlevel">
+                      Blood Sugar Level (in mg/dL)
+                  </label>
+                <input id="bloodsugerlevel" type="number">
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+        <div id="editSection" class="hidden">
+            <button id="cancelEdit" onclick="cancelEdit()">
+                  Cancel
+              </button>
+            <button id="updateEntry" onclick="editRow()">
+                  Update
+              </button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Water Intake <br> (in ml)</th>
+                    <th>Exercise Duration <br> (in min)</th>
+                    <th>Blood Sugar Level <br> (in mg/dL)</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+
+</html>
